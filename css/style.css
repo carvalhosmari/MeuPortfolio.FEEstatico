@@ -1,0 +1,165 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Mono:wght@200;300;400;600&display=swap');
+
+html, body {
+    /* box-sizing: border-box; */
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    scroll-behavior: smooth;
+    font-family: 'Noto Sans Mono', monospace;
+}
+
+.container {
+    width: 100vw;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 10vh 500vh 0vh;
+    grid-template-areas: "h" "m" "f";
+}
+
+header {
+    background-color: #c6ac8f;
+    grid-area: h;
+    width: 100vw;
+    height: 10vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+ nav {
+    height: 100%;
+}
+
+nav > ul {
+    height: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    margin: 0;
+    padding: 0;
+    align-items: center;
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    font-size: 1.2rem;
+    color: #124559;
+    letter-spacing: 0.1rem;
+}
+
+a:hover {
+    color: #eae0d5;
+    transition: 0.5s;
+}
+
+main {
+    grid-area: m;
+    background-color: #eae0d5;
+}
+
+footer {
+    background-color: #c6ac8f;
+    width: 100vw;
+    height: 5vh;
+    grid-area: f;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    font-size: 0.8rem;
+    font-weight: 100;
+    color: #124559;
+    letter-spacing: 0.1rem;
+} 
+
+
+ .home, .infos, .formacao, .skills, .contato {
+    height: 100vh;
+    scroll-behavior: smooth;
+}
+
+.home {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    scroll-margin-top: 3.5rem;
+}
+
+h1 {
+    margin: 2rem 0 3rem 0;
+    font-size: 4rem;
+    font-weight: 300;
+    color: #124559;
+    letter-spacing: 0.2rem;
+}
+
+.infos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+p {
+    font-size: 1.6rem;
+    letter-spacing: 0.2rem;
+    font-weight: 300;
+    padding: 0 3rem 0 3rem;
+    color: #124559;
+}
+
+.formacao {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.skills {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    text-align: center;
+}
+
+.contato {
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    text-align: center;
+}
+
+.contato ul {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 0;
+    padding: 0;
+    align-items: center;
+    list-style: none;
+}
+
+.home img {
+    width: 20rem;
+    height: 20rem;
+    border: 2px;
+    border-style: dashed;
+    border-color: #124559c3;
+    border-radius: 50%;
+}
+
+.skills ul {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 0;
+    padding: 0;
+    align-items: center;
+    list-style: none;
+}
+
+img {
+    width: 3rem;
+    height: 3rem;
+}
