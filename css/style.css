@@ -54,6 +54,7 @@ a:hover {
 }
 
 main {
+    width: 100vw;
     grid-area: m;
     background-color: #eae0d5;
 }
@@ -162,4 +163,33 @@ p {
 img {
     width: 3rem;
     height: 3rem;
+}
+
+@media screen and (max-width:425px) {
+
+    a {
+        font-size: 0.7rem;
+    }
+
+    h1 {
+        font-size: 2.4rem;
+    }
+
+    .home img {
+        width: 18rem;
+        height: 18rem;
+    }
+
+    p {
+        font-size: 1.2rem;
+    }
+
+    img {
+        width: 2rem;
+        height: 2rem;
+    }
+
+    footer {
+        font-size: 0.6rem;
+    }
 }
